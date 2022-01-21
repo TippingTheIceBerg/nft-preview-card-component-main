@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --ethGreen:  hsl(178, 100%, 50%);
+    --ethGreenActive: rgb(18 243 232 / .6);
+    --fontColor: hsl(215, 51%, 70%);
+    --mainBg: hsl(217, 54%, 11%);
+    --cardBg: hsl(216, 50%, 16%);
+    }
+html,body{
+    height: 100%;
+    width:100%;
+    background-color: var(--mainBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+#card{
+    color: var(--fontColor);
+  background-color:  var(--cardBg);
+    height: 500px;
+    width: 300px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 0 0 100px 1px black;
+ border-radius: 20px;
+ font-family: 'Outfit', sans-serif;;
+
+
+}
+#cardHolder{
+    height: 100%;
+    width: 80%;
+    display: flex;
+justify-content: space-evenly;
+flex-direction: column; 
+position: relative;
+
+}
+#productDesc{
+    font-size: 15px;
+}
+#productImg{
+ height: 250px; 
+aspect-ratio: 1;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+position: relative;
+border-radius: 10px;
+
+}
+
+#productImgActive{
+    height: 250px; 
+    width: 250px;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--ethGreenActive);
+    top: 21px;
+    left: -5px;
+    display: flex;
+    cursor: pointer;
+    opacity: 0;
+}
+#productImgActiveIcon{
+margin: auto;
+}
+#productImgActive:hover{
+    opacity: 1;
+}
+#productNumber{
+    color:white;
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+#productNumber:hover{
+    color: var(--ethGreen);
+    cursor: pointer;
+}
+#priceAndDays{
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+#productCost{
+  color:var(--ethGreen);
+display: flex;
+
+}
+.imageMargin{
+    margin-right: 5px;
+
+
+}
+
+#daysLeft{
+    display: flex;
+
+}
+
+#profileDetails{
+    display: flex;
+align-items: center;
+  justify-content: start;
+  border-top: solid hsl(215, 32%, 27%) 1px;
+  padding-top: 10px;
+  
+}
+#profileImage{
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  border: solid white 1px;
+  border-radius: 80px;
+}
+#userName{
+    color: white;
+    
+}
+#userName:hover{
+    color: var(--ethGreen);
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+  #productDesc{
+font-size: 14px;
+  }
+}
